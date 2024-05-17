@@ -1,4 +1,4 @@
-# How to Install GUI for Ubuntu 22
+# How to Install GUI for Ubuntu
 
 This guide will walk you through the steps to install a graphical user interface (GUI) on Ubuntu using the Xfce desktop environment and enable remote desktop access via XRDP.
 
