@@ -1,13 +1,13 @@
 # How to Install GUI for Ubuntu 22
 
-This guide will walk you through the steps to install a graphical user interface (GUI) on Ubuntu 22 using the Xfce desktop environment and enable remote desktop access via XRDP.
+This guide will walk you through the steps to install a graphical user interface (GUI) on Ubuntu using the Xfce desktop environment and enable remote desktop access via XRDP.
 
 ## Installation Steps
 
 1. Update the package list and install the required packages:
-
+      bash```
    apt update && apt install xfce4 xfce4-goodies xrdp -y 
-
+         ```
    - `apt update`: Updates the package list to ensure you have access to the latest versions of the packages.
    - `apt install`: Installs the specified packages.
      - `xfce4`: The core package for the Xfce desktop environment.
@@ -16,16 +16,16 @@ This guide will walk you through the steps to install a graphical user interface
    - `-y`: Automatically answers "yes" to any prompts during the installation process.
 
 2. Set the default session for XRDP:
-
+      bash```
    echo "xfce4-session" | tee .xsession
-
+         ```
    - `echo "xfce4-session"`: Outputs the string "xfce4-session".
    - `| tee .xsession`: Pipes the output of the previous command and saves it to a file named `.xsession`. This file is used by XRDP to start the Xfce session.
 
 3. Restart the XRDP service to apply the changes:
-
+      bash```
    systemctl restart xrdp
-
+         ```
    - `systemctl`: A command to manage system services.
    - `restart`: Restarts the specified service.
    - `xrdp`: The name of the XRDP service.
@@ -43,7 +43,7 @@ Once connected, you will see the Xfce desktop environment, and you can interact 
 
 ## Troubleshooting
 
-If you encounter any issues during the installation or while accessing the GUI, please refer to the [troubleshooting guide](TROUBLESHOOTING.md) for common solutions.
+If you encounter any issues during the installation or while accessing the GUI, please refer to the [troubleshooting guide](https://google.com/) for common solutions.
 
 ## Contributing
 
