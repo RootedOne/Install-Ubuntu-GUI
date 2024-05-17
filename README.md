@@ -6,9 +6,9 @@ This guide will walk you through the steps to install a graphical user interface
 
 1. Update the package list and install the required packages:
 
-   css```
+```
    apt update && apt install xfce4 xfce4-goodies xrdp -y 
-                                    ```
+```
    - `apt update`: Updates the package list to ensure you have access to the latest versions of the packages.
    - `apt install`: Installs the specified packages.
      - `xfce4`: The core package for the Xfce desktop environment.
