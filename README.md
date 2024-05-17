@@ -17,16 +17,16 @@ This guide will walk you through the steps to install a graphical user interface
    - `-y`: Automatically answers "yes" to any prompts during the installation process.
 
 2. Set the default session for XRDP:
-      css```
+```
    echo "xfce4-session" | tee .xsession
-         ```
+```
    - `echo "xfce4-session"`: Outputs the string "xfce4-session".
    - `| tee .xsession`: Pipes the output of the previous command and saves it to a file named `.xsession`. This file is used by XRDP to start the Xfce session.
 
 3. Restart the XRDP service to apply the changes:
-      bash```
+```
    systemctl restart xrdp
-         ```
+```
    - `systemctl`: A command to manage system services.
    - `restart`: Restarts the specified service.
    - `xrdp`: The name of the XRDP service.
