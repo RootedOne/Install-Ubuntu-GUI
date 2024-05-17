@@ -5,9 +5,10 @@ This guide will walk you through the steps to install a graphical user interface
 ## Installation Steps
 
 1. Update the package list and install the required packages:
-      bash```
+
+   css```
    apt update && apt install xfce4 xfce4-goodies xrdp -y 
-         ```
+                                    ```
    - `apt update`: Updates the package list to ensure you have access to the latest versions of the packages.
    - `apt install`: Installs the specified packages.
      - `xfce4`: The core package for the Xfce desktop environment.
@@ -16,7 +17,7 @@ This guide will walk you through the steps to install a graphical user interface
    - `-y`: Automatically answers "yes" to any prompts during the installation process.
 
 2. Set the default session for XRDP:
-      bash```
+      css```
    echo "xfce4-session" | tee .xsession
          ```
    - `echo "xfce4-session"`: Outputs the string "xfce4-session".
